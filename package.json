@@ -1,0 +1,23 @@
+{
+  "name": "PetstoreApp",
+  "version": "0.0.1",
+  "description": "Pet store application",
+  "scripts": {
+    "test": "mocha test",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "4.12.x",
+    "cfenv": "1.0.x",
+    "log4js": "0.6.26",
+    "proxyquire": "*",
+    "body-parser": "*",
+    "request": "*",
+    "bluebird": "*"
+
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "repository": {}
+}

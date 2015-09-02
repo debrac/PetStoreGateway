@@ -1,0 +1,8 @@
+applications:
+- disk_quota: 512M
+  host: PetstoreGateway-bootcamp
+  name: PetstoreGateway-bootcamp
+  path: .
+  domain: mybluemix.net
+  instances: 1
+  memory: 512M
