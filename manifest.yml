@@ -1,7 +1,7 @@
 applications:
 - disk_quota: 512M
-  host: PetstoreGateway-bootcamp
-  name: PetstoreGateway-bootcamp
+  host: PetstoreGateway-debra
+  name: PetstoreGateway-debra
   path: .
   domain: mybluemix.net
   instances: 1

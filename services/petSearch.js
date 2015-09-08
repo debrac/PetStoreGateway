@@ -29,6 +29,24 @@ function ClientError(e) {
 //You code goes here
 //End of implementation
 
+
+exports.findByTag = function(req, res) {
+  //This can be replaced by VCAP_SERVICES and url from APIm
+  var petAPIURL =
+    apiBaseURL + '/pet/' +
+    req.query.tag +
+    '?client_id=' + clientId + '&client_secret=' + clientSecret;
+
+  logger.info("petAPIURL : " + petAPIURL);
+  request(petAPIURL).then(function(contents) {
+    var data = JSON.parse(contents[1]);
+    return res.json(data);
+
+  }).catch(ClientError, function(e) {
+    //A client error like 400 Bad Request happened
+  });
+};
+
 exports.findById = function(req, res) {
   //This can be replaced by VCAP_SERVICES and url from APIm
   var petAPIURL =

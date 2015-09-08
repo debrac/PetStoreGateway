@@ -62,8 +62,8 @@ app.use(allowCrossDomain);
 // database.initDBConnection();
 
 //Uncomment the following as part of Lab exercise
-//app.get('/findByTag', petSearch.findByTag);
-app.get('/findById', petSearch.findById);
+app.get('/findByTag', petSearch.findByTag);
+//app.get('/findById', petSearch.findById);
 
 
 app.listen(appEnv.port, appEnv.bind, function() {
